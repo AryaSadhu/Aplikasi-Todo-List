@@ -1,0 +1,78 @@
+# File dan folder yang tidak perlu di-commit ke Git
+
+# File konfigurasi lokal
+config/database.php.local
+.env
+.env.local
+
+# Editor dan IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+error_log
+access_log
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.bak
+*.old
+
+# Upload folder (jika ada)
+uploads/*
+!uploads/.gitkeep
+
+# Session files (jika disimpan di folder)
+sessions/*
+!sessions/.gitkeep
+
+# Composer (jika menggunakan composer)
+vendor/
+composer.lock
+
+# Node modules (jika menggunakan npm)
+node_modules/
+package-lock.json
+
+# Build files
+dist/
+build/
+
+# Database dumps
+*.sql.gz
+backup/*.sql
+
+# PHPUnit
+.phpunit.result.cache
+
+# Coverage reports
+coverage/
+*.coverage
+
+# Mac
+.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Backup files
+backup/
+*.backup
