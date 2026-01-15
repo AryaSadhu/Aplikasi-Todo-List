@@ -170,3 +170,13 @@ Project ini dibuat untuk keperluan akademik mata kuliah Back-End Web Development
 
 ## Kontak
 Untuk pertanyaan atau saran, silakan hubungi anggota tim melalui GitHub.
+
+[I KADEK ARIANTA] | [240030104] | [https://github.com/kadek46ari-droid/I-KADEK-ARIANTA] | Documentation & Integration |
+
+Documentation & Integration
+Saya membuat dan menyusun dokumentasi proyek agar mudah dipahami, mulai dari README, penjelasan fitur aplikasi, alur kerja sistem, hingga panduan instalasi dan penggunaan.
+Selain itu, saya membuat proses integrasi antara frontend, backend, dan database supaya seluruh fitur aplikasi dapat berjalan dengan baik dan saling terhubung.
+Dokumentasi ini saya buat agar anggota tim maupun pengguna lain dapat memahami dan menggunakan aplikasi dengan lebih mudah.
+Dan disini terjadi miss komunikasi, yang kami sebelumnya kira satu orang saja yang hanya perlu commit ternyata perlu seluruh anggota, dan setiap anggota sudah mendapatkan tugas dan perannya masing-masing.
+
+
