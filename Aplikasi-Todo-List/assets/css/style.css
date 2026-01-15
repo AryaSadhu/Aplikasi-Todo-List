@@ -1,0 +1,309 @@
+/**
+ * Custom CSS untuk Todo List Application
+ * Menggunakan Bootstrap 5 sebagai base framework
+ */
+
+/* Global Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #0dcaf0;
+    --light-bg: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    min-height: 100vh;
+}
+
+/* Navbar Customization */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    color: #ffc107;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Form Styling */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+}
+
+/* Button Styling */
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+/* Badge Styling */
+.badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+/* Alert Styling */
+.alert {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alert-dismissible .btn-close {
+    padding: 0.75rem;
+}
+
+/* Task Card Styling */
+.card.border-success {
+    border-width: 2px !important;
+    border-color: var(--success-color) !important;
+}
+
+.text-decoration-line-through {
+    text-decoration: line-through;
+}
+
+/* Statistics Cards */
+.card.bg-info,
+.card.bg-warning,
+.card.bg-success {
+    border: none;
+}
+
+.card.bg-info .card-title,
+.card.bg-warning .card-title,
+.card.bg-success .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card.bg-info h2,
+.card.bg-warning h2,
+.card.bg-success h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Login/Register Card Shadow */
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Minimum height for login/register pages */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Input group styling */
+.input-group .btn-outline-secondary {
+    border-color: #ced4da;
+}
+
+.input-group .btn-outline-secondary:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+}
+
+/* Past due date styling */
+.text-danger.fw-bold {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Filter button group */
+.btn-group .btn {
+    border-radius: 0;
+}
+
+.btn-group .btn:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.btn-group .btn:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.btn-group .btn.active {
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card.bg-info h2,
+    .card.bg-warning h2,
+    .card.bg-success h2 {
+        font-size: 2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .btn-group {
+        display: flex;
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        flex: 1;
+    }
+}
+
+/* Loading spinner (opsional) */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15rem;
+}
+
+/* Empty state illustration */
+.alert-info i {
+    font-size: 1.2rem;
+}
+
+/* Footer spacing */
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Form text helper */
+.form-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Success animation for completed tasks */
+.border-success {
+    animation: successPulse 0.5s ease-in-out;
+}
+
+@keyframes successPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Hover effect on task cards */
+.card h-100:hover .card-body {
+    background-color: #f8f9fa;
+}
+
+/* Icon colors */
+.fa-tasks {
+    color: #ffc107;
+}
+
+.fa-user,
+.fa-envelope,
+.fa-lock,
+.fa-heading,
+.fa-align-left,
+.fa-calendar-alt {
+    color: var(--primary-color);
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .btn,
+    .alert {
+        display: none;
+    }
+    
+    .card {
+        break-inside: avoid;
+    }
+}
