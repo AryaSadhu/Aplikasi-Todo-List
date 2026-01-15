@@ -985,4 +985,18 @@ function formatDate($date) {
 function isPastDue($date) {
     if (empty($date)) return false;
 
+## Jobdesk: UI / Frontend Developer
+**Nama:** Alexander Jeremiah Ngantung  
+**NIM:** 240030399 
+**Role:** UI/FrontEnd Developer 
+
+## Deskripsi bagian yang dibuat:
+Mengembangkan UI/frontend aplikasi Todo List menggunakan PHP, HTML, CSS, dan JavaScript.
+Bertanggung jawab dalam mendesain dan mengimplementasikan tampilan halaman:
+- Login dan Register
+- Dashboard
+- Tambah, Edit, dan Hapus Task
+
+Mengatur layout dan styling aplikasi menggunakan file CSS agar tampilan rapi dan konsisten
+serta menambahkan interaksi dasar menggunakan JavaScript untuk mendukung pengalaman pengguna.
 
